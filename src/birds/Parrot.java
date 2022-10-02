@@ -9,7 +9,7 @@ public class Parrot extends Bird {
     private int noOfWords;
 
     public Parrot() {
-        setType("Parrot");
+        setType(Type.PARROT);
     }
 
     public Parrot(String birdName) throws IllegalArgumentException{
@@ -54,26 +54,9 @@ public class Parrot extends Bird {
     }
 
     public void speak(String favoriteSaying){
-        System.out.println("Parrot is speaking");
+        System.out.println(favoriteSaying);
     }
 
-
-    public String toString() {
-        return "Bird{" +
-                ", type='" + getType() + '\'' +
-                ", characteristic='" + getCharacteristic() + '\'' +
-                ", extinct=" + isExtinct() +
-                ", numOfWings=" + getNumOfWings() +
-                ", favoriteFoods=" + getFood() +
-                '}';
-    }
-
-    @Override
-    public void displayCharacteristics() {
-
-        System.out.println(getCharacteristic());
-
-    }
 
 
 }

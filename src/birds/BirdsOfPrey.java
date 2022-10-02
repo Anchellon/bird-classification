@@ -6,7 +6,7 @@ import java.util.List;
 public class BirdsOfPrey extends Bird {
 
     public BirdsOfPrey(){
-        setType("Birds of Prey");
+        setType(Type.BIRDS_OF_PREY);
     }
 
     public BirdsOfPrey(String birdName) throws IllegalArgumentException{
@@ -38,25 +38,13 @@ public class BirdsOfPrey extends Bird {
     }
 
     public void Hunt(String prey){
-        System.out.println("hunts");
+
+        System.out.println("I will Kill you");
     }
 
 
-    public String toString() {
-        return "Bird{" +
-                ", type='" + getType() + '\'' +
-                ", characteristic='" + getCharacteristic() + '\'' +
-                ", extinct=" + isExtinct() +
-                ", numOfWings=" + getNumOfWings() +
-                ", favoriteFoods=" + getFood() +
-                '}';
-    }
 
-    @Override
-    public void displayCharacteristics() {
 
-        System.out.println(getCharacteristic());
 
-    }
 
 }

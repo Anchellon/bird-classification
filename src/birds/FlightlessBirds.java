@@ -8,7 +8,7 @@ import java.util.Set;
 public class FlightlessBirds extends Bird {
 
     public FlightlessBirds() {
-        setType("Flightless Bird");
+        setType(Type.FLIGHTLESS_BIRDS);
     }
 
     public FlightlessBirds(String birdName) throws IllegalArgumentException {
@@ -46,21 +46,8 @@ public class FlightlessBirds extends Bird {
         System.out.println("Oops, cannot fly");
     }
 
-    public String toString() {
-        return "Bird{" +
-                ", type='" + getType() + '\'' +
-                ", characteristic='" + getCharacteristic() + '\'' +
-                ", extinct=" + isExtinct() +
-                ", numOfWings=" + getNumOfWings() +
-                ", favoriteFoods=" + getFood() +
-                '}';
-    }
 
-    @Override
-    public void displayCharacteristics() {
 
-        System.out.println(getCharacteristic());
 
-    }
 
 }

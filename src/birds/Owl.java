@@ -7,7 +7,7 @@ public class Owl extends Bird{
 
 
     public Owl(){
-        setType("Owl");
+        setType(Type.OWL);
         setName("Owl");
         setCharacteristic(Arrays.asList("They are distinguished by the facial disks that frame the eyes and bill."));
         setNumOfWings(2);
@@ -25,25 +25,12 @@ public class Owl extends Bird{
     }
 
     public void rotateHead(){
-
+        System.out.println("I can rotate");
     }
 
-    public String toString() {
-        return "Bird{" +
-                ", type='" + getType() + '\'' +
-                ", characteristic='" + getCharacteristic() + '\'' +
-                ", extinct=" + isExtinct() +
-                ", numOfWings=" + getNumOfWings() +
-                ", favoriteFoods=" + getFood() +
-                '}';
-    }
 
-    @Override
-    public void displayCharacteristics() {
 
-        System.out.println(getCharacteristic());
 
-    }
 
 
 }

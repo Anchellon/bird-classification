@@ -3,7 +3,17 @@ package birds;
 import java.util.*;
 
 public class Bird extends Animalia{
-    private String type;
+
+    enum Type {
+        BIRDS_OF_PREY,
+        FLIGHTLESS_BIRDS,
+        OWL,
+        PARROT,
+        PIGEON,
+        SHOREBIRD,
+        WATERFOWL
+    }
+    private Type type;
     private List<String> characteristic = new ArrayList<String>();
     private int numOfWings;
     private boolean isExtinct = false;
@@ -28,11 +38,11 @@ public class Bird extends Animalia{
         }
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(Type type) {
         this.type = type;
     }
 
@@ -81,7 +91,7 @@ public class Bird extends Animalia{
 
 
     public void fly(){
-
+        System.out.println("Flap flap");
     }
 
     public void eat(List<String> food){

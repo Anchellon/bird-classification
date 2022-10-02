@@ -7,7 +7,7 @@ public class Pigeon extends Bird{
 
     public Pigeon(){
         setName("Pigeon");
-        setType("Pigeon");
+        setType(Type.PIGEON);
         setNumOfWings(2);
         setCharacteristic(Arrays.asList("Pigeons (or doves) are known for feeding their young 'bird milk' very similar to the milk of mammals."));
         setFood(Arrays.asList("seeds","fruits","berries","vegetation"));
@@ -24,25 +24,12 @@ public class Pigeon extends Bird{
     }
 
     public void feedYoungOnesMilk(){
-
+        System.out.println("feed");
     }
 
-    public String toString() {
-        return "Bird{" +
-                ", type='" + getType() + '\'' +
-                ", characteristic='" + getCharacteristic() + '\'' +
-                ", extinct=" + isExtinct() +
-                ", numOfWings=" + getNumOfWings() +
-                ", favoriteFoods=" + getFood() +
-                '}';
-    }
 
-    @Override
-    public void displayCharacteristics() {
 
-        System.out.println(getCharacteristic());
 
-    }
 
 
 

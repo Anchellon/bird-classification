@@ -22,7 +22,7 @@ public class Waterfowl extends Bird implements WaterBird{
     }
 
     public Waterfowl(){
-        setType("Waterfowl");
+        setType(Type.WATERFOWL);
 
     }
 
@@ -52,23 +52,10 @@ public class Waterfowl extends Bird implements WaterBird{
 
     @Override
     public void swim() {
-
+        System.out.println("Race me");
     }
 
-    public String toString() {
-        return "Bird{" +
-                ", type='" + getType() + '\'' +
-                ", characteristic='" + getCharacteristic() + '\'' +
-                ", extinct=" + isExtinct() +
-                ", numOfWings=" + getNumOfWings() +
-                ", favoriteFoods=" + getFood() +
-                '}';
-    }
 
-    @Override
-    public void displayCharacteristics() {
 
-        System.out.println(getCharacteristic());
 
-    }
 }
