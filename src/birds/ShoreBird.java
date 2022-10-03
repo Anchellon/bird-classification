@@ -45,8 +45,6 @@ public class ShoreBird extends Bird implements WaterBird{
             throw new IllegalArgumentException("Enter a bird from : GREAT AUK, HORNED PUFFIN, and AFRICAN JACANA");
         }
     }
-
-
     public ShoreBird(String birdName, List<String> characteristics, int noOfWings, boolean isExtinct, List<String> waterBodies, List<String> food){
         this();
         setName(birdName);
@@ -56,15 +54,8 @@ public class ShoreBird extends Bird implements WaterBird{
         setWaterBodies(waterBodies);
         setFood(food);
     }
-
-
-    @Override
+   @Override
     public void swim() {
         System.out.println("Splish splash!");
     }
-
-
-
-
-
 }
